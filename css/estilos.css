@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* cabecera o encabezado */
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 95%;
+
+}
+
+.cabecera {
+    background-color: black;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 2);
+}
+
+h1 {
+    text-align: left;
+    padding-left: 16px;
+    padding top: 16px;
+    font-family: 'Oswald', sans-serif;
+    color: yellow;
+}
+
+.lista_menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menu {
+    min-width: 30%;
+}
+
+.texto_menu {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* main index */
+
+.hero {
+    background-color: gray;
+    height: 900px;
+    width: 100%;
+    background-image: url(../Imagenes/_DSC0646-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.parrafo_1 {
+    
+    color: white;
+    max-width: 100%;
+    font-size: 20px;
+    text-align: center;
+    width: 400px;
+    height: 200px;    
+
+}
+
+/* pie footer */
+
+.pie_pagina {
+    color: white;
+    background-color: black;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Servicios.html main */ 
+
+.tit_serv {
+ display: flex;
+ min-height: 300px;
+ background-color: yellow;
+ padding-top: 16px;
+ padding-bottom: 16px;
+ justify-content: center;
+}
+
+.servicio {
+    display: flex;
+    min-height: 600px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    padding: 16px;
+    gap: 0px;
+
+}
+
+
+.informacion_1 {
+  background-color: yellow;
+  width: 500px;
+  height: 350px;
+  background-image: url(../Imagenes/evento_DSC6012.jpg);
+  background-size: cover;
+  padding: 16px;
+
+}
+
+.informacion_2 {
+    background-color: yellow;
+    width: 500px;
+    height: 350px;
+    background-image: url(../Imagenes/empanada_producto.jpg);
+    background-size: cover;
+    padding: 16px;
+  
+  }
+
+  .informacion_3 {
+    background-color: yellow;
+    width: 500px;
+    height: 350px;
+    background-image: url(../Imagenes/Ushuaia_puerto.jpg);
+    background-size: cover;
+    padding: 16px;
+  
+  }
+
+  .informacion {
+    background-color: yellow;
+    width: 500px;
+    height: 350px;
+    background-image: url(../Imagenes/retrato\ 15.jpg);
+    background-size: cover;
+    padding: 16px;
+  
+  }
+
