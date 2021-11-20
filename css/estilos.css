@@ -4,6 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+ 
+ul{
+    list-style: none;
+    padding-left: 0;
+
+}
 
 /* cabecera o encabezado */
 
@@ -22,6 +28,11 @@
     padding-bottom: 16px;
     width: 100%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 2);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 h1 {
@@ -49,7 +60,12 @@ h1 {
 .texto_menu {
     color: white;
     text-decoration: none;
+    font-size: 20px;
+    transition: all 1s;
+}
 
+.texto_menu:hover {
+color: yellow;
 }
 
 /* main index */
@@ -57,7 +73,7 @@ h1 {
 .hero {
     height: 900px;
     width: 100%;
-    background-image: url(../Imagenes/_DSC0646-2.jpg);
+    background-image: url(../Imagenes/playa_comodoro.jpg);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -82,13 +98,22 @@ h1 {
 .pie_pagina {
     color: white;
     background-color: black;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 64px;
+
+}
+
+.pie_contenido {
+   text-align: center;
+   padding: 10px 0;
+}
+
+.pie_enlace {
+    color: white;
+}
+
+.pie_enlace:hover {
+color: yellow;
 }
 
 /* Servicios.html main */ 
@@ -155,3 +180,32 @@ h1 {
   
   }
 
+
+/* Fijar Elemento a la pantalla (Whatsapp) */
+
+.fijar {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 1000;
+    
+}
+
+.fijar__enlace {
+    display: inline-block;
+    background-color: #00bb2d;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all 1s;
+}
+
+.fijar__enlace:hover {
+    box-shadow: 5px 5px 5px yellow;
+}
+
+.fijar__img {
+    width: 30px;
+    height: 30px;
+}
