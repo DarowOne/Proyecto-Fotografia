@@ -14,12 +14,12 @@ ul{
 /* cabecera o encabezado */
 
 .contenedor {
+    margin: 0 auto;
+    max-width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    max-width: 95%;
-
+    
 }
 
 .cabecera {
@@ -44,17 +44,16 @@ h1 {
 }
 
 .lista_menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style: none;
     
 }
 
 .menu {
     min-width: 30%;
+    padding-right: 5%;
 }
 
 .texto_menu {
@@ -65,7 +64,7 @@ h1 {
 }
 
 .texto_menu:hover {
-color: yellow;
+    color: yellow;
 }
 
 /* main index */
@@ -113,72 +112,38 @@ color: yellow;
 }
 
 .pie_enlace:hover {
-color: yellow;
+    color: yellow;
 }
 
 /* Servicios.html main */ 
 
 .tit_serv {
- display: flex;
- min-height: 300px;
- background-color: yellow;
- padding-top: 16px;
- padding-bottom: 16px;
- justify-content: center;
-}
-
-.servicio {
     display: flex;
-    min-height: 600px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: black;
-    padding: 16px;
-    gap: 0px;
+    justify-content: center;
+    min-height: 5px;
+    background-color: yellow;
+    padding-top: 100px;
+    padding-bottom: 16px;
 
 }
 
+.texto {
+    text-align: center;
+    width: 55%;
+}
 
-.informacion_1 {
-  background-color: yellow;
-  width: 500px;
-  height: 350px;
-  background-image: url(../Imagenes/evento_DSC6012.jpg);
-  background-size: cover;
-  padding: 16px;
+.carrusel {
+    background-color: black; 
+    padding-bottom: 64px;
+    padding-top: 64px;
 
 }
 
-.informacion_2 {
-    background-color: yellow;
-    width: 500px;
-    height: 350px;
-    background-image: url(../Imagenes/empanada_producto.jpg);
-    background-size: cover;
-    padding: 16px;
-  
-  }
+.nidea {
+    background-color:gray;
+}
 
-  .informacion_3 {
-    background-color: yellow;
-    width: 500px;
-    height: 350px;
-    background-image: url(../Imagenes/Ushuaia_puerto.jpg);
-    background-size: cover;
-    padding: 16px;
-  
-  }
 
-  .informacion {
-    background-color: yellow;
-    width: 500px;
-    height: 350px;
-    background-image: url(../Imagenes/retrato\ 15.jpg);
-    background-size: cover;
-    padding: 16px;
-  
-  }
 
 
 /* Fijar Elemento a la pantalla (Whatsapp) */
@@ -220,4 +185,21 @@ color: yellow;
 .formulario {
     padding-top: 200px;
     padding-bottom: 64px;
+}
+
+/* Media Querys */
+
+@media (max-width: 768px) {
+    .cabecera .contenedor {
+        flex-direction: column;
+    }
+    
+    .lista_menu {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .tit_serv {
+        padding-top: 150px;
+    }
 }
