@@ -44,6 +44,7 @@ h1 {
 }
 
 .lista_menu {
+    gap: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,6 +70,13 @@ h1 {
 
 /* main index */
 
+.portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
 .hero {
     height: 900px;
     width: 100%;
@@ -81,14 +89,24 @@ h1 {
 
 }
 
+.bienvenidos_1 {
+    
+    color: white;
+    max-width: 100%;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 32px;
+       
+
+}
 .parrafo_1 {
     
     color: white;
     max-width: 100%;
     font-size: 20px;
     text-align: center;
-    width: 400px;
-    height: 200px;    
+    margin-bottom: 32px;
+       
 
 }
 
@@ -139,9 +157,6 @@ h1 {
 
 }
 
-.nidea {
-    background-color:gray;
-}
 
 
 
@@ -192,14 +207,51 @@ h1 {
 @media (max-width: 768px) {
     .cabecera .contenedor {
         flex-direction: column;
+        width: 100%;
     }
     
     .lista_menu {
         gap: 10px;
         flex-wrap: wrap;
     }
+
+    .texto_menu {
+        font-size: 15px;
+    }
     
     .tit_serv {
+        flex-direction: column;
         padding-top: 150px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .portada {
+        flex-direction: column;
+    }
+
+    .bienvenidos_1 {
+        font-size: 28px;
+    }
+
+    .parrafo_1 {
+        font-size: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        background-image: url(../Imagenes/estrellas_perito.jpg);
+        background-position: center;
+        width: 100%;
+    }
+
+    .fijar .fijar__enlace {
+        flex-direction: column;
+        align-items: center;
+  
+    }
+
+    .carrusel .container {
+        flex-direction: column;
     }
 }
